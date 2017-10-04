@@ -1,0 +1,30 @@
+<div class="container">
+	<div class="ui">
+		<h1>Eat Da Burger</h1>
+		<img src="assets/img/burger.jpg" height="150" width="200">
+	</div>
+	<div class="input">
+		<h3>Enter a burger</h3>
+		<input id="burgerName" type="text"><input id='submit' type="submit">
+	</div>
+	<div class="burgerContainer">
+		<div class="uneaten">
+			<p>uneaten burgers</p>
+			{{#each burgers }}
+				{{#unless devoured}}
+				<div>
+					<div data-value="{{id}}">{{burger_name}}</div><input class="devour" type="button" value="Devour It!" />
+				</div>
+				{{/unless}}
+			{{/each}}
+		</div>
+		<div class="eaten">
+			<p>devoured burgers</p>
+			{{#each burgers }}
+				{{#if devoured}}
+				<div>{{burger_name}}</div>
+				{{/if}}
+			{{/each}}
+		</div>
+	</div>
+</div>

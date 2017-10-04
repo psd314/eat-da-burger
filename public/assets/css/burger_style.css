@@ -1,0 +1,70 @@
+body{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background: #fce75b	;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: auto;
+	align-content: center;
+}
+
+.burgerContainer {
+	display: flex;
+
+}
+
+.ui {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	/*border: 3px solid purple;*/
+	width: 50%;
+	align-content: center; 	
+}
+
+.ui h1 {
+	display: inline-block;
+	margin: auto;
+}
+
+.ui img {
+	overflow: hidden;
+	margin: auto;
+}
+
+.input {
+	margin: auto;
+}
+.input h1 {
+	display: inline-block;
+}
+
+.burgerContainer {
+}
+
+.eaten,
+.uneaten {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 50%;
+	border: 3px solid blue;
+}
+
+.uneaten {
+		
+}
+
+.eaten {
+	flex-wrap: nowrap;
+}
+
+
+
+
+
