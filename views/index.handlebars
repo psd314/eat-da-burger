@@ -9,20 +9,20 @@
 	</div>
 	<div class="burgerContainer">
 		<div class="uneaten">
-			<p>uneaten burgers</p>
+			<h3>Uneaten Burgers</h3>
 			{{#each burgers }}
 				{{#unless devoured}}
-				<div>
-					<div data-value="{{id}}">{{burger_name}}</div><input class="devour" type="button" value="Devour It!" />
+				<div class="uneatenDiv">
+					<div  data-value="{{id}}" class="burgerMade">{{burger_name}}</div><input class="devour" type="button" value="Devour It!" />
 				</div>
 				{{/unless}}
 			{{/each}}
 		</div>
 		<div class="eaten">
-			<p>devoured burgers</p>
+			<h3>Devoured Burgers</h3>
 			{{#each burgers }}
 				{{#if devoured}}
-				<div>{{burger_name}}</div>
+				<div class="burgerEaten">{{burger_name}}</div>
 				{{/if}}
 			{{/each}}
 		</div>

@@ -18,7 +18,7 @@
 			$('.devour').on("click", function() {
 				$(this).parent().remove();	
 				var burgerID = $(this)[0].previousSibling.attributes[0].value;
-
+				
 				$.ajax({
 					url: currentURL + "/api/devour",
 					type: "PUT",
